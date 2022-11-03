@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+	border-radius: 10px;
+}
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(home-img/bbsbpc-2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	margin-top: 80px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+
+
+/*------- Gallery --------*/
+
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+
+h2{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+
+h2::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: crimson;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+
+.img-gallery{
+	width: 80%;
+	margin: 100px auto 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.img-gallery img{
+	width: 100%;
+	cursor: pointer;
+}
+
+.img-gallery img:hover{
+	/* transform: scale(0.8) rotate(-5deg);
+	border-radius: 20px;
+	box-shadow: 0 32px 7px rgba(68, 77, 136, 0.2); */
+	transform: scale(1.5,1.5);
+	transition: .8s;
+}
+.full-img{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.full-img img{
+	width: 90%;
+	max-width: 1000px;
+}
+.full-img span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+

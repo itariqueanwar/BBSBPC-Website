@@ -1,0 +1,227 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+	border-radius: 10px;
+}
+
+
+/*---- course ----*/
+
+.course{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+.about-col p, .course-detail-col p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+h2{
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.course-col{
+	flex-basis: 31%;
+	background: #d8f9f9;
+	border-radius:10px ;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600 ;
+	color: #222;
+	margin: 10px;
+}
+.course-col:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 700px) {
+	.row{
+		flex-direction: column;
+	}
+}
+
+/* ---- Campus ----*/
+
+.campus{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.campus-col{
+	flex-basis:32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.campus-col img{
+	width: 100%;
+	display: block;
+} 
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: #48d1cd80;
+}
+.layer h3{
+	width: 100%;
+	font-weight: 500;
+	color: black;
+	background-color: #6ba2ce;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	padding: 25px;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3{
+	bottom: 49%;
+	opacity: 1;
+}
+.layer a{
+	width: 50%;
+	font-weight: 200;
+	color: #fff;
+	font-size: 18px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover a{
+	bottom: 49%;
+	opacity: 1;
+}
+
+
+
+
+
+/*------- About Us --------*/
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(home-img/bbsbpc-2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	margin-top: 80px;
+}
+
+.about-us{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+
+.about-col h3{
+	margin-top: 15px;
+	text-align: left;
+}
+
+.about-col img{
+	width: 100%;
+}
+
+.about-col h1{
+	padding-top: 0;
+}
+.about-col p{
+	padding: 15px 0 25px;
+}
+
+
+
+/*--- Course Details ---*/
+
+.course-detail{
+	width: 80%;
+	margin: auto;
+	padding-top: 100px;
+	text-align: center;
+}
+
+.course-detail-col {
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: justify;
+	background: #fff;
+	padding: 25px;
+	cursor: pointer;
+}
+
+.course-detail-col img{
+	height: 150px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 10%;
+}
+.course-detail-col p{
+	padding: 0;
+}
+
+.course-detail-col h3{
+	margin-top: 15px;
+	text-align: left;
+}
+
+@media(max-width: 700px){
+	.course-detail-col img{
+		margin-left: 0px;
+		margin-right: 15px;
+	}
+}
+

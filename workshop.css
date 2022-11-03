@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img{
+	width: 150px;
+	border-radius: 10px;
+}
+
+/*------- About Us --------*/
+.sub-header{
+	height: 50vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(workshop-img/bbsbpc-2.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	margin-top: 80px;
+}
+
+.about-us{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+	padding-bottom: 50px;
+}
+
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+
+.about-col img{
+	width: 100%;
+}
+
+.about-col h1{
+	padding-top: 0;
+}
+.about-col p{
+	padding: 15px 0 25px;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+.about-us p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+@media(max-width: 700px) {
+	.row{
+		flex-direction: column;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

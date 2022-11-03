@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Baba Banda Singh Bahadur Polytechnic College</title>
+	<link rel="shortcut icon" type="x-icon" href="home-img/bbsbpc-icon.png">
+	<link rel="stylesheet" type="text/css" href="BBSBPC.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<script src="https://kit.fontawesome.com/0cff24f38d.js" crossorigin="anonymous"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRDYHC4D40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XRDYHC4D40');
+</script>
+
+</head>
+<body onload="slider()">
+	</section>
+	<section class="header">
+	<div class="banner">
+		<div class="slider">
+			<img src="home-img/bbsbpc.jpg" id="slideImg">
+		</div>
+		<div class="overlay">
+			<div class="navbar">
+				<div class="logo">
+					<a href="index.html"><img src="home-img/bbsbpc-logo.png"></a>
+				</div>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="About.html">ABOUT</a></li>
+						<li><a href="gallery.html">GALLERY</a></li>
+						<li><a href="sikh-religion-exam.html">SIKH RELIGION EXAM</a></li>
+						<li><a href="Contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+				<div class="text-box">
+					<h1> BABA BANDA SINGH BAHADUR <br> POLYTECHNIC COLLEGE</h1>
+					<p>Established in 2006 by the Baba Banda Singh Bahadur Educational Trust</p>
+					<a href="admission-form.html" class="hero-btn">Admission Open 2022-23</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var slideImg = document.getElementById("slideImg");
+		var images = new Array(
+			"home-img/bbsbpc.jpg",
+			"home-img/bbsbpc-2.jpg"
+		);
+		var len = images.length;
+		var i=0;
+		function slider(){
+			if(i>len-1){
+				i=0;
+			}
+			slideImg.src = images[i];
+			i++;
+			setTimeout('slider()',3000);
+		}
+	</script>
+	<div class="new-update">
+		<div class="ticker">
+			<div class="news-title">
+				<h5>SPOTLIGHT</h5> 
+			</div>
+			<div class="news">
+				<marquee>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatibus, voluptatem et assumenda quas illum ab. Commodi iste fugit doloribus sit labore vel, eaque, asperiores, vitae at veritatis sapiente itaque.</p>
+				</marquee>
+			</div>
+		</div>
+	</div>
+
+	</section>
+
+<!---- Cources ---->
+<section class="course">
+	<h1>Cources We Offer </h1>
+	<p>The institute intends to acquire reputation by providing skill development and nutrition and technical education of standard quality. <br> The Institute campus has well developed laboratories, library, class room, hostel, canteen and playground with all facilities.</p>
+
+		<div class="row">
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Applied <br> Science </h3>
+				</a>
+			</div>
+			
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Computer Science <br> & Enginerring </h3>
+				</a>
+			</div>
+
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Automobile <br> Engineering </h3>
+				</a>
+			</div>
+
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Civil <br> Engineering </h3>
+				</a>
+			</div>
+
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Mechanical <br> Engineering </h3>
+				</a>
+			</div>
+
+			<div class="course-col">
+				<a href="Course.html">
+					<h3> Electronics & Communication Engineering </h3>
+				</a>
+			</div>	
+		</div>
+	
+</section>
+
+<!---- Campus ---->
+
+<section class="campus">
+	<h1> Our Campus</h1>
+	<p> The college is situated in an idyllic environment and is housed in a sprawling pollution free campus of 11 acres </p>
+
+	<div class="row">
+		<div class="campus-col">
+			<a href="workshop.html">
+				<img src="home-img/workshop.png">
+				<div class="layer">
+					<h3>THE WORKSHOP</h3>
+				</div>
+			</a>
+		</div>
+
+		<div class="campus-col">
+			<a href="hostel.html">
+				<img src="home-img/hostel.png">
+			<div class="layer">
+				<h3>THE HOSTEL</h3>
+			</div>
+			</a>
+		</div>
+
+		<div class="campus-col">
+			<a href="cafeteria.html">
+				<img src="home-img/cafeteria.png">
+			<div class="layer">
+				<h3>THE CAFETERIA</h3>
+			</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!--- Facilities --->
+
+<section class="facilities">
+	<h1> Our Facilities </h1>
+	<p> Our college is thoughtfully designed to provide students with a vibrant learning atmosphere. </p>
+
+	<div class="row">
+		<div class="facilities-col">
+			<img src="home-img/bbsbpc-library-2.jpg">
+			<h3>Library</h3>
+			<p>Well equipped, fully computerized library provides the 
+			<a href="Library.html">read more</a> </p>
+		</div>
+		<div class="facilities-col">
+			<img src="home-img/bbsbpc-sports.jpg">
+			<h3>Sports</h3>
+			<p>Physical recreation through gamges and sports has been an important 
+			<a href="sports.html">read more</a> </p>
+		</div>
+		<div class="facilities-col">
+			<img src="home-img/bbsbpc-tpo.jpg">
+			<h3>Training & Placement</h3>
+			<p>The target of training & placement cell is to provide employment
+			<a href="placement.html">read more</a> </p>
+		</div>
+	</div>
+</section>
+
+<!--- Testimonials --->
+
+<section class="testimonials">
+	<h1>TESTIMONIALS </h1>
+	<p> What Our Student Says </p>
+	
+	<div class="row">
+		<div class="testimonials-col">
+			<img src="home-img/TA-1.jpeg">
+			<div>
+				<p>I would like to appreciate the placement cell at BBSBPC for the efforts they made for providing a fair and ample amount of chances to us students. The faculty members worked so hard on our overall development and conducted boot-camps and extra classes for us to enhance our technical and interpersonal skills. I loved my time here at BBSBPC.</p>
+				<br>
+				<p><strong>Tarique Anwar</strong></p>
+				<p>Computer Science & Engineering 2019-2022 </p>
+				<i class="fa-solid fa-star" style="color: #f44336;"></i>
+				<i class="fa-solid fa-star" style="color: #f44336;"></i>
+				<i class="fa-solid fa-star" style="color: #f44336;"></i>
+				<i class="fa-solid fa-star" style="color: #f44336;"></i>
+				<i class="fa-solid fa-star-half" style="color: #f44336;"></i>
+				<br>
+				<a href="https://www.facebook.com/thetariqueanwar" target="_blank"><i class="fa-brands fa-facebook" style="color:  #3b5998;"></i></a>
+				&nbsp;
+				<a href="https://www.linkedin.com/in/thetariqueanwar/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i></a>
+			</div>
+		</div>
+		<div class="testimonials-col">
+			<img src="home-img/HK.jpg">
+			<div>
+				<p>I would like to appreciate the placement cell at BBSBPC for the efforts they made for providing a fair and ample amount of chances to us students. The faculty members worked so hard on our overall development and conducted boot-camps and extra classes for us to enhance our technical and interpersonal skills. I loved my time here at BBSBPC.</p>
+				<br>
+				<p><strong>Himanshu Kumar</strong></p>
+				<p>Computer Science & Engineering 2019-2022 </p>
+				<i class="fa-solid fa-star" style="color: #f44336"></i>
+				<i class="fa-solid fa-star" style="color: #f44336"></i>
+				<i class="fa-solid fa-star" style="color: #f44336"></i>
+				<i class="fa-solid fa-star" style="color: #f44336"></i>
+				<i class="fa-regular fa-star" style="color: #f44336"></i>
+				<br>
+				<a href="https://www.facebook.com/profile.php?id=100010437703154" target="_blank"><i class="fa-brands fa-facebook" style="color:  #3b5998;"></i></a>
+				&nbsp;
+				<a href="https://www.linkedin.com/in/himanshu-kumar-558385216/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0e76a8;"></i></a>
+			</div>
+		</div>
+	</div>
+	<a href="Testimonial.html" class="hero-btn2">READ MORE</a>
+</section>
+
+<!--- Call To Act --->
+
+<section class="cta">
+	<h1>Enroll For Our Various Cources </h1>
+	<a href="Contact.html" class="hero-btn">CONTACT US</a>
+</section>
+
+<!--- Footer --->
+
+<section class="footer">
+	<footer>
+		<div class="footer-row">
+			<div class="footer-col">
+				<img src="home-img/bbsbpc-logo-2.png" class="footer-logo">
+				<p>It was established in 2006 by the Baba Banda Singh Bahadur Educational Trust formed under the patronage of
+					Shiromani Gurdwara Parbandhak Committee with the approval of the Government of Punjab.</p>
+	
+			</div>
+
+			<div class="footer-col">
+				<h3>Get In Touch <div class="underline"><span></span></div></h3>
+				<p>Sikh University Rd</p>
+				<p>BBSBE College Campus</p>
+				<p>Fatehgarh Sahib, Punjab-140407</p>
+				<p class="email-id">bbsbpc@hotmail.com</p>
+				<h4>+91 763324513</h4>
+			</div>
+
+			<div class="footer-col">
+				<h3>Links <div class="underline"><span></span></div></h3>
+				<ul>
+					<li><a href="http://www.punjabteched.net/curriculum/curriculla.htm">Syllabus</a></li>
+					<li><a href="http://www.punjabteched.com/code-book.htm">Subject Code</a></li>
+					<li><a href="http://results.pbteched.net/index.html">Result</a></li>
+					<li><a href="footer-file/exam-form.pdf" target="_blank">Exam Form</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h3>About <div class="underline"><span></span></div></h3>
+				<ul>
+					<li><a href="principal-desk.html">Principal's Desk</a></li>
+					<li><a href="footer-file/Management.pdf" target="_blank">Management</a></li>
+					<li><a href="AICTE.html">AICTE Affiliation</a></li>
+					<li><a href="footer-file/mandatory-disclosure.pdf" target="_blank">Mandatory Disclosure</a></li>
+				</ul>
+				<br>
+				<div class="social-icon">
+					<a href="https://www.facebook.com/bbsbpcsrifatehgarhsahib/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/BbsbpcFatehgarh?t=fY01nTodk7S0SmyzQawctw&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/bbsbpc_official_fgs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCu0WbhQMBDGd_mc_xZ1EAsg/videos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Designed & Developed by Tarique Anwar & Himanshu Kumar&nbsp;&nbsp; |&nbsp; &nbsp;BBSBPC © 2022 - All Rights Reserved</p>
+	</footer>
+</section>
+
+<!---- javaScript for Toggle Menu ---->
+<script>
+	var navLinks = document.getElementById("navLinks")
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>

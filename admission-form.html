@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BBSBPC | Admission</title>
+  <link rel="shortcut icon" type="x-icon" href="home-img/bbsbpc-icon.png">
+	<link rel="stylesheet" type="text/css" href="BBSBPC.css">
+  <link rel="stylesheet" href="footer.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	<script src="https://kit.fontawesome.com/0cff24f38d.js" crossorigin="anonymous"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XRDYHC4D40"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XRDYHC4D40');
+</script>
+
+</head>
+<body>
+	<section class="sub-header">
+	<nav>
+		<a href="admission-form.html"><img src="home-img/bbsbpc-logo-2.png"></a>
+	</nav>
+	<h1>Admission Enquiry Form</h1>
+	</section>
+
+<!-- ----- Admission Enquiry Form ---- -->
+
+  <section class="enquiry-form">
+    <div class="master-div-style">
+      <form id="survey-form" action="admission-form.php" method="post">
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="name" id="name">Name</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="name" name="name" class="input-fields" placeholder="Enter your name" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="fname" id="fname">Father's Name</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="fname" name="fname" class="input-fields" placeholder="Enter your Father's name" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="mname" id="mname">Mother's Name</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="mname" name="mname" class="input-fields" placeholder="Enter your Mother's name" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="email" id="email">Email</label>
+          </div>
+          <div class="fields">
+            <input type="email" id="email" name="email" class="input-fields" placeholder="Enter your email address" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="dob" id="dob">Date of Birth</label>
+          </div>
+          <div class="fields">
+            <input type="date" id="dob" name="dob" class="input-fields">
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="gender">Gender</label>
+          </div>
+          <div class="fields">
+            <ul id="gender" style="list-style: none;">
+              <li class="radio">
+                <label>
+                  Male
+                  <input name="gender" type="radio" value="Male" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Female
+                  <input name="gender" type="radio" value="Female" class="user-selection">
+                </label>
+              </li>
+              <li class="radio">
+                <label>
+                  Other
+                  <input name="gender" type="radio" value="Other" class="user-selection">
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="qualification" id="qualification">Educational Qualification</label>
+          </div>
+          <div class="fields">
+            <select name="qualification" id="qualification" class="dropdown">
+                <option value="">select last qualification</option>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="cgpa" id="cgpa">Aggregate(%)/CGPA</label>
+          </div>
+          <div class="fields">
+            <input type="number" id="cgpa" name="cgpa" class="input-fields" placeholder="0" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="course" id="course">Course Applied For</label>
+          </div>
+          <div class="fields">
+            <select name="course" id="course" class="dropdown">
+                <option value="course">Choose a Course</option>
+                <option value="Computer Science & Engineering (3 Year)">Computer Science & Engineering (3 Year)</option>
+                <option value="Civil Engineering (3 Year)">Civil Engineering (3 Year)</option>
+                <option value="Mechanical Engineering (3 Year)">Mechanical Engineering (3 Year)</option>
+                <option value="Electronics & Communication Engineering (3 Year)">Electronics & Communication Engineering (3 Year)</option>
+                <option value="Automobile Engineering (3 Year)">Automobile Engineering (3 Year)</option>
+                <option value="Computer Science & Engineering (2 Year)">Computer Science & Engineering (2 Year)</option>
+                <option value="Civil Engineering (2 Year)">Civil Engineering (2 Year)</option>
+                <option value="Mechanical Engineering (2 Year)">Mechanical Engineering (2 Year)</option>
+                <option value="Electronics & Communication Engineering (2 Year)">Electronics & Communication Engineering (2 Year)</option>
+              <option value="Automobile Engineering (2 Year)">Automobile Engineering (2 Year)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="phone" id="phone">Phone no</label>
+          </div>
+          <div class="fields">
+            <input type="number" id="phone" name="phone" class="input-fields" placeholder="+91 9087654321" required>
+          </div>
+        </div>
+
+        <div class="form-rows">
+          <div class="labels">
+            <label for="address" id="address">Full Address</label>
+          </div>
+          <div class="fields">
+            <input type="text" id="address" name="address" class="input-fields" placeholder="Enter your complete Address" required>
+          </div>
+        </div>
+        
+        <button class="button" id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+
+
+<!--- Footer --->
+
+<section class="footer">
+	<footer>
+		<div class="footer-row">
+			<div class="footer-col">
+				<img src="home-img/bbsbpc-logo-2.png" class="footer-logo">
+				<p>It was established in 2006 by the Baba Banda Singh Bahadur Educational Trust formed under the patronage of
+					Shiromani Gurdwara Parbandhak Committee with the approval of the Government of Punjab.</p>
+	
+			</div>
+
+			<div class="footer-col">
+				<h3>Get In Touch <div class="underline"><span></span></div></h3>
+				<p>Sikh University Rd</p>
+				<p>BBSBE College Campus</p>
+				<p>Fatehgarh Sahib, Punjab-140407</p>
+				<p class="email-id">bbsbpc@hotmail.com</p>
+				<h4>+91 763324513</h4>
+			</div>
+
+			<div class="footer-col">
+				<h3>Links <div class="underline"><span></span></div></h3>
+				<ul>
+					<li><a href="http://www.punjabteched.net/curriculum/curriculla.htm">Syllabus</a></li>
+					<li><a href="http://www.punjabteched.com/code-book.htm">Subject Code</a></li>
+					<li><a href="http://results.pbteched.net/index.html">Result</a></li>
+					<li><a href="footer-file/exam-form.pdf" target="_blank">Exam Form</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h3>About <div class="underline"><span></span></div></h3>
+				<ul>
+					<li><a href="principal-desk.html">Principal's Desk</a></li>
+					<li><a href="footer-file/Management.pdf" target="_blank">Management</a></li>
+					<li><a href="AICTE.html">AICTE Affiliation</a></li>
+					<li><a href="footer-file/mandatory-disclosure.pdf" target="_blank">Mandatory Disclosure</a></li>
+				</ul>
+				<br>
+				<div class="social-icon">
+					<a href="https://www.facebook.com/bbsbpcsrifatehgarhsahib/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/BbsbpcFatehgarh?t=fY01nTodk7S0SmyzQawctw&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/bbsbpc_official_fgs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.youtube.com/channel/UCu0WbhQMBDGd_mc_xZ1EAsg/videos" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Designed & Developed by Tarique Anwar & Himanshu Kumar&nbsp;&nbsp; |&nbsp; &nbsp;BBSBPC © 2022 - All Rights Reserved</p>
+	</footer>
+</section>
+
+<!---- javaScript for Toggle Menu ---->
+<script>
+	var navLinks = document.getElementById("navLinks")
+	function showMenu() {
+		navLinks.style.right = "0";
+	}
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
